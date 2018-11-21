@@ -24,7 +24,7 @@ client.on('ready', () => {
   
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`! Legends | By: RO7`,"http://twitch.tv/S-F")
+client.user.setGame(`! Venus | By: JàKeY`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -76,7 +76,7 @@ Dat = currentTime.getDate()//Alpha Codes
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
-By:RO7
+By:JàKeY
        -bc2 | لأرسال برود كاست للكل
        -bc3  |  لأرسال برود كاست للأونلاين
        -user | يسويلك روم بعدد الاشخاص اللي فالسيرفر
@@ -99,13 +99,8 @@ client.on("message", message => {
         message.guild.members.forEach(member => {
       if(!message.member.hasPermission('ADMINISTRATOR'))  return;
       message.react("✅");
-            const w = ['./bc/1.png',
-                       './bc/2.png',
-                       './bc/3.png',
-                       './bc/4.png',
-                       './bc/5.png',
-                       './bc/6.png',
-                       './bc/7.png',];
+            const w = ['./bc/1.png'
+                       ];
             let Image = Canvas.Image,
             canvas = new Canvas(400, 200),
             ctx = canvas.getContext('2d');
