@@ -99,8 +99,13 @@ client.on("message", message => {
         message.guild.members.forEach(member => {
       if(!message.member.hasPermission('ADMINISTRATOR'))  return;
       message.react("✅");
-            const w = ['./bc/1.png'
-                       ];
+                       const w = ['./bc/1.png',
+                       './bc/2.png',
+                       './bc/3.png',
+                       './bc/4.png',
+                       './bc/5.png',
+                       './bc/6.png',
+                       './bc/7.png',];
             let Image = Canvas.Image,
             canvas = new Canvas(400, 200),
             ctx = canvas.getContext('2d');
