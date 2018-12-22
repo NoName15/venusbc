@@ -4,7 +4,21 @@ const jimp = require("jimp");
 const moment = require("moment");
 console.log("Welcome Again !");
 
- client.on('message', function(message) {
+ 
+if(!Discord) var Discord = require('discord.js');
+if(!client) var client = new Discord.Client();
+if(!prefix) var prefix = "-" ; // البرفكس 
+
+var stopReacord = true;
+var reactionRoles = [];
+var definedReactionRole = null;
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});client.on('message', msg => {
+    if(msg.content === '-help')
+    msg.reply('Check Your DMs :white_check_mark:')
+  });
+  client.on('message', function(message) {
 	const myID = "518443986961301523";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
@@ -58,20 +72,6 @@ console.log("Welcome Again !");
     }
 });
 
-if(!Discord) var Discord = require('discord.js');
-if(!client) var client = new Discord.Client();
-if(!prefix) var prefix = "-" ; // البرفكس 
-
-var stopReacord = true;
-var reactionRoles = [];
-var definedReactionRole = null;
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});client.on('message', msg => {
-    if(msg.content === '-help')
-    msg.reply('Check Your DMs :white_check_mark:')
-  });
-  
   
   
 client.on('ready', () => {
