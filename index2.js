@@ -19,7 +19,7 @@ client.on('ready', () => {
     msg.reply('Check Your DMs :white_check_mark:')
   });
   client.on('message', function(message) {
-	const myID = "518443986961301523";
+	const myID = "463665960214331393";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
